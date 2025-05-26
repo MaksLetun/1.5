@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    margin-top: 2px;
+    font-family: "TTLakes", "Times New Roman", sans-serif;
+
+}
+
+.header_container {
+    width: 100%;
+    border-top: 1px solid rgba(217, 255, 245, 1);
+}
+
+.text_header {
+    margin: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: rgba(126, 126, 130, 1);
+}
+
+
+.main_part {
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.main_part_style {
+    display: flex;
+    margin-left: 16px;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    min-width: 240px;
+    height: 72px;
+    border-radius: 6px;
+    border: 1px solid rgba(234, 234, 234, 1);
+    background-color: rgba(255, 255, 255, 1);
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 16px;
+    margin-right: 33px;
+}
+
+.svg_btn {
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 62, 121, 1);
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+.icon_go {
+    display: block;
+}
+
+.expand_container {
+    display: none;
+}
+
+.svg_btn_expand{
+    border: none;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}

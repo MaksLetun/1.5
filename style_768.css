@@ -1,0 +1,19 @@
+.expand_container {
+    display: block;
+}
+
+.main_part_style {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.logo {
+    box-sizing: border-box;
+    min-width: 224px;
+    margin-right: 21px;
+}
+
+.logo:nth-child(n+7) {
+    display: none;
+}

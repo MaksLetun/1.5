@@ -1,0 +1,14 @@
+.logo {
+    box-sizing: border-box;
+    min-width: 240px;
+    margin-right: 32px;
+}
+
+.logo:nth-child(n+7) {
+    display: flex;
+}
+
+.logo:nth-child(n+9) {
+    display: none;
+}
+
