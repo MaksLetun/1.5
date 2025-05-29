@@ -17,3 +17,16 @@
 .logo:nth-child(n+7) {
     display: none;
 }
+
+.expand_container {
+    width: 133px;
+    padding-bottom: 14px;
+}
+
+.expand_container .expand_icon {
+    vertical-align: middle;  /* Выравнивание SVG по середине */
+}
+
+.expand_container .read_more {
+    vertical-align: middle;  /* Выравнивание текста по середине */
+}

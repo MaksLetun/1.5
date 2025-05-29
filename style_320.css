@@ -5,9 +5,15 @@ body {
 
 }
 
+.main_style {
+    background-color: rgba(248, 248, 248, 1);
+
+}
+
 .header_container {
     width: 100%;
     border-top: 1px solid rgba(217, 255, 245, 1);
+    background-color: white;
 }
 
 .text_header {
@@ -27,6 +33,7 @@ body {
     &::-webkit-scrollbar {
         display: none;
     }
+    padding-top: 24px;
 }
 
 .main_part_style {
@@ -84,3 +91,5 @@ button {
     justify-content: center;
     vertical-align: middle;
 }
+
+
