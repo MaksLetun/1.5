@@ -125,19 +125,29 @@ cursor: pointer;
 .rotate {
     transform: rotate(180deg);
 }
-    
+
 .swiper-slide {
-    position: relative;
     margin-left: 24px;
     width: 240px;
     height: 72px;
-    overflow: hidden;
 }
 
+
+
+.swiper-pagination-bullet-active {
+    background: #67696b;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px; 
+}
 
 .swiper {
     height: 115px;
 }
+
 
 @media (min-width: 768px) {
     .slides,
