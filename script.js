@@ -17,18 +17,20 @@ hideButton.addEventListener('click', function () {
     }
   });
 
-  
+
   const swiper = new Swiper('.swiper', {
-    spaceBetween: -9,
-    slidesPerView: 'auto',
-    speed: 1000,
-    loop: false,
-    allowTouchMove: true,
-    autoHeight: true,
-    direction: 'horizontal',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true,
-    },
-  });
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
