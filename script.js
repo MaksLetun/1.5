@@ -17,19 +17,17 @@ hideButton.addEventListener('click', function () {
     }
   });
 
-
   const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-  },
-    
-  spaceBetween: -9,
+    spaceBetween: -9,
     slidesPerView: 'auto',
+    speed: 1000,
+    loop: false,
+    allowTouchMove: true,
+    autoHeight: true,
+    direction: 'horizontal',
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true,
     },
-});
+  });

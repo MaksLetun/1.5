@@ -12,7 +12,6 @@
     font-display: swap;
 }
 
-
 @font-face {
     font-family: "TTLakes";
     src: url("./fonts/TTLakes-Bold.woff") format("woff");
@@ -55,12 +54,12 @@ body {
     overflow: hidden;
 }
 
-.card-list__logo {
+.card-list__card {
     width: 224px;
     height: 72px;
     background-color: #FFFFFF;
     border: 1px solid #EAEAEA;
-    border-radius: 6px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -103,33 +102,55 @@ cursor: pointer;
 @media (max-width: 768px) {
 .card-list {
     display: none; }
-.action__button  {
-    display: none;
+    .action__button  {
+        display: none;
     }
 
-.card-list__card {
-    width: 240px;}
+    .card-list__card {
+        width: 240px;}
+}
+
+@media (min-width: 768px) {
+    .swiper {
+        display: none;
+    }
+    .swiper-pagination {
+        display: none;
+    }
 }
 
 
 @media (min-width: 1120px) {
-    .card-list__logo {
+    .card-list__card {
         width: 240px;
     }
 }
 
-.visible {
+ .visible {
      max-height: 165px;;
 }
 
 .rotate {
     transform: rotate(180deg);
 }
-
+    
 .swiper-slide {
+    position: relative;
     margin-left: 24px;
     width: 240px;
     height: 72px;
+    overflow: hidden;
+}
+
+.swiper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px; 
+    height: 81px;
+    background: linear-gradient(to left, #F8F8F8 0.01%, rgba(248,248,248,0) 100%);
+    z-index: 2; 
 }
 
 .swiper-pagination-bullet-active {
@@ -144,12 +165,4 @@ cursor: pointer;
 
 .swiper {
     height: 115px;
-}
-
-
-@media (min-width: 768px) {
-    .slides,
-    .swiper-pagination {
-        display: none;
-    }
 }
